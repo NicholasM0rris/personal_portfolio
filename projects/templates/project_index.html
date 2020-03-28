@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<h1 style="text-align:center"> Nick Morris</h1>
+<h1>Projects</h1>
+<div class="row">
+{% for project in projects %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <img class="card-img-top" src="{% static project.image %}">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <a href="{% url 'project_detail' project.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<br>
+<h3> Contact info: </h3>
+<div class = "row">
+    <div class="col-md-2">
+            <div class="card mb-2">
+                <h5 class="card-title" style="text-align:center"> Github</h5>
+                <a href="https://github.com/NicholasM0rris">
+                    <center>
+                    <img src='{% static "img/github.png" %}'>
+                    </center>
+                </a>
+            </div>
+    </div>
+    <div class="col-md-2">
+            <div class="card mb-2">
+                <h5 class="card-title" style="text-align:center"> Linkedin</h5>
+                <a href="www.linkedin.com/in/nick-morris-546341149">
+                    <center>
+                    <img src='{% static "img/linkedin.png" %}'>
+                    </center>
+                </a>
+            </div>
+    </div>
+</div>
+{% endblock %}
+
+
