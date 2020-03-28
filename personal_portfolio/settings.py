@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'x-awx1+e))6j8d&+%%8kzndzo$&us!
 # DEBUG = False
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nicks-portfolio314.herokuapp.com/',"localhost", "127.0.0.1"]
 
 
 # Application definition
