@@ -1,1 +1,1 @@
-web: gunicorn personal_portfolio.wsgi --log-file -
+waitress-serve personal_portfolio.wsgi:application
