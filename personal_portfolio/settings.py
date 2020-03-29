@@ -27,9 +27,9 @@ SECRET_KEY = 'x-awx1+e))6j8d&+%%8kzndzo$&us!4jjwlz3@+ld5bit_e-v2'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['nm-pp.herokuapp.com/', 'nm-pp.herokuapp.com', "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ['nm-pp.herokuapp.com/', 'nm-pp.herokuapp.com', "localhost", "127.0.0.1",]
 
 # Application definition
 

@@ -2,8 +2,14 @@
 {% load static %}
 {% block page_content %}
 
-<h1 style="text-align:center"> Nick Morris</h1>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<center><img src='{% static "img/logo.png" %}'></center>
+
+<!--<h1 style="text-align:center"> Nick Morris</h1>-->
 <h1>Projects</h1>
+<br>
 <div class="row">
 {% for project in projects %}
     <div class="col-md-4">
@@ -22,6 +28,25 @@
     {% endfor %}
 </div>
 <br>
+<h3> About me </h3>
+<br>
+<span style="font-family:Roboto">
+<div class="row">
+  <div class="column left" style="background-color:#eee;">
+      <img src='{% static "img/nm.png" %}'>
+  </div>
+  <div class="column right" style="background-color:#eee;">
+    <p>I am a fourth-year mechatronics engineering honours student at The University of Queensland seeking an opportunity
+ to excel in an area I am passionate about. Through actively engaging in university projects and courses, I have
+ acquired the technical experience and teamwork to be a valued member of an engineering team.
+ My experiences over the years of studying have grown my passion for mechatronic engineering,
+ particularly in robotics and automation.
+    </p>
+  </div>
+</div>
+</span>
+
+<br>
 <h3> Contact info: </h3>
 <div class = "row">
     <div class="col-md-2">
@@ -37,7 +62,7 @@
     <div class="col-md-2">
             <div class="card mb-2">
                 <h5 class="card-title" style="text-align:center"> Linkedin</h5>
-                <a href="www.linkedin.com/in/nick-morris-546341149">
+                <a href="http://www.linkedin.com/in/nick-morris-546341149">
                     <center>
                     <img src='{% static "img/linkedin.png" %}'>
                     </center>
