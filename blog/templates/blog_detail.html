@@ -12,6 +12,8 @@
         {% endfor %}
     </small>
     <p>{{ post.body | linebreaks }}</p>
+    <br>
+    {{ post.html_body | safe }}
     <h3>Leave a comment:</h3>
     <form action="/blog/{{ post.pk }}/" method="post">
         {% csrf_token %}
