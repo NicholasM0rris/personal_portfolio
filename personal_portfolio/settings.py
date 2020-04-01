@@ -29,7 +29,7 @@ SECRET_KEY = 'x-awx1+e))6j8d&+%%8kzndzo$&us!4jjwlz3@+ld5bit_e-v2'
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 DEBUG = False
 
-ALLOWED_HOSTS = ['nm-pp.herokuapp.com/', 'nm-pp.herokuapp.com', "localhost", "127.0.0.1",]
+ALLOWED_HOSTS = ['nick-morris.herokuapp.com/', 'nick-morris.herokuapp.com', "localhost", "127.0.0.1",]
 
 # Application definition
 
